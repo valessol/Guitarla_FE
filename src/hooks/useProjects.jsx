@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { ProjectsContext } from "../context/CartContext";
+import { CartContext } from "../context/CartContext";
 
-const useProjects = () => {
-  return useContext(ProjectsContext);
+const useCart = () => {
+  return useContext(CartContext);
 };
-export default useProjects;
+export default useCart;

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ProductsContext } from "../context/ProductsContext";
-import ProductsList from "../components/productsList";
+import ProductsList from "../components/ProductsList";
 
 const Store = () => {
   const { products, loading } = useContext(ProductsContext);
