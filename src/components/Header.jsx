@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import SubNavigation from "./SubNavigation";
-import Navigation from "./navigation";
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (
