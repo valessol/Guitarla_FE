@@ -16,8 +16,8 @@ const ConfirmAccount = () => {
 
   const confirmAccount = async () => {
     try {
-      const { data } = await axiosClient(`/auth/confirm-account/${id}`);
-      setAlert({ msg: data.msg, type: "success" });
+      const { data } = await axiosClient(`/auth/confirm/${id}`);
+      setAlert({ msg: "Cuenta verificada correctamente", type: "success" });
       setLoading(true);
       setTimeout(() => {
         navigate("/login");
@@ -30,8 +30,8 @@ const ConfirmAccount = () => {
 
   return (
     <>
-      <h1 className="text-sky-600 font-black text-6xl capitalize">
-        Confirma tu cuenta
+      <h1 className="text-amber-500 font-black text-6xl capitalize">
+        Confirmación de tu cuenta
       </h1>
       <div>{alert.msg && <Alert alert={alert} />}</div>
       {loading && <Spinner text="Redirigiendo para iniciar sesión" />}
