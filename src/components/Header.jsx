@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 
 const Header = () => {
   return (
-    <header className="h-96 relative">
+    <header className="h-96 block relative">
       <div className="absolute top-2 right-2">
         <SubNavigation />
       </div>
